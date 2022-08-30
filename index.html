@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <title>Портфолио</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__inner">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__item">
+                  <button
+                    onclick="document.querySelector('.about').scrollIntoView()"
+                    href=""
+                    class="header__link"
+                  >
+                    Обо мне
+                  </button>
+                </li>
+                <li class="header__item">
+                  <button
+                    onclick="document.querySelector('.skills').scrollIntoView()"
+                    href=""
+                    class="header__link"
+                  >
+                    Навыки
+                  </button>
+                </li>
+                <li class="header__item">
+                  <button
+                    onclick="document.querySelector('.portfolio').scrollIntoView()"
+                    href=""
+                    class="header__link"
+                  >
+                    Портфолио
+                  </button>
+                </li>
+                <li class="header__item">
+                  <button
+                    onclick="document.querySelector('.footer').scrollIntoView()"
+                    href=""
+                    class="header__link"
+                  >
+                    Контакты
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__burger">
+            <span class=""></span>
+          </div>
+        </div>
+      </header>
+      <section class="home">
+        <div class="home__container _container" data-aos="fade-down">
+          <div id="bar"></div>
+          <div class="home__inner">
+            <div class="home__name">
+              Баранцева <br />
+              Диана
+            </div>
+            <div class="home__info">
+              HTML-верстальщик <br />
+              21 years, Москва
+            </div>
+          </div>
+          <img src="image/home.png" alt="" class="home__img" />
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container _container">
+          <h2 class="about__title title" data-aos="fade-up">Обо мне</h2>
+        </div>
+        <p class="about__text">
+          Привет, я Диана - HTML-верстальщик.<br />
+          Занимаюсь версткой больше года. Имею коммерческий опыт около
+          полугода.<br />
+          Я активно занимаюсь изучением новых технологий в сфере Web-разработки
+          .
+        </p>
+      </section>
+      <section class="skills">
+        <div class="skills__container _container">
+          <h2 class="skills__title title">Мои навыки</h2>
+          <div class="skills__inner">
+            <div class="skills__box" data-aos="fade-left">
+              <img src="image/skills01.png" />
+              <ul class="skills__list">
+                <li class="skills__item">Знания HTML5 + Scss</li>
+                <li class="skills__item">Базовые знания JavaScript + JQuery</li>
+                <li class="skills__item">CSS-анимация</li>
+              </ul>
+            </div>
+            <div class="skills__box">
+              <img class="skills__img" src="image/skills02.png" />
+              <ul class="skills__list">
+                <li class="skills__item">
+                  Коммерческий опыт работы
+                  <span
+                    style="font-weight: bold; font-size: 20px; color: #a1cbf2"
+                    >более полугода
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__box" data-aos="fade-right">
+              <img src="image/skills03.png" />
+              <ul class="skills__list">
+                <li class="skills__item">Верстка писем</li>
+                <li class="skills__item">
+                  Опыт работы в трекинговых системах Jira и ClickUp:
+                </li>
+                <li class="skills__item">Опыт работы с React</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="portfolio__container _container">
+          <h2 class="portfolio__title title">Портфолио</h2>
+          <div class="portfolio__box" data-aos="fade-left">
+            <img src="image/portfolio.png" alt="" class="portfolio__img" />
+            <div class="portfolio__item">
+              <a
+                href="https://diana2908bsm.github.io/greenn/"
+                class="portfolio__link"
+                >Интернет-магазин GreenShop</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__box" data-aos="fade-right">
+            <img src="image/portfolio02.png" alt="" class="portfolio__img" />
+            <div class="portfolio__item">
+              <a
+                href="https://diana2908bsm.github.io/Desire/"
+                class="portfolio__link"
+              >
+                Сайт дизайнерской мебели
+              </a>
+            </div>
+          </div>
+          <div class="portfolio__box" data-aos="fade-left">
+            <img src="image/portfolio03.png" alt="" class="portfolio__img" />
+            <div class="portfolio__item">
+              <a href="www.megapari.host/new_ring_inr" class="portfolio__link">
+                Лендинг с формой регистрации
+              </a>
+            </div>
+          </div>
+          <div class="portfolio__box" data-aos="fade-right">
+            <img src="image/portfolio04.png" alt="" class="portfolio__img" />
+            <div class="portfolio__item">
+              <a
+                href="https://diana2908bsm.github.io/e-mail/"
+                class="portfolio__link"
+              >
+                Верстка письма
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <h2 class="footer__title title">Контакты</h2>
+          <div class="footer__inner">
+            <a href="tel:+79611952165" class="footer__number"
+              >8(961)-195-21-64
+            </a>
+            <a href="mail:di.barantseva@yandex.ru" class="footer__email"
+              >di.barantseva@yandex.ru</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

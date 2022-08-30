@@ -1,0 +1,49 @@
+@media (max-width: 1220px) {
+  .home {
+    &__name {
+      font-size: 3.1vw;
+      line-height: 59px;
+      color: #070707;
+    }
+    &__info {
+      font-size: 1.74vw;
+      line-height: 22px;
+      color: #070707;
+    }
+  }
+  .portfolio {
+    background: #ebe9e9;
+    padding-top: 60px;
+    &__container {
+      width: auto;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .skills {
+    &__inner {
+      flex-direction: column;
+    }
+    &__box {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 26px;
+  }
+  .about {
+    &__text {
+      font-size: 14px;
+    }
+  }
+  .home {
+    &__info {
+      font-size: 2.6vw;
+    }
+    &__name {
+      font-size: 5.1vw;
+    }
+  }
+}
